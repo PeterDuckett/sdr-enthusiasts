@@ -3,4 +3,13 @@
   "extends": [
     "config:base"
   ]
+  "regexManagers": [
+    {
+      "fileMatch": ["(^|/)Chart\\.yaml$"],
+      "matchStrings": [
+        "#\\s?renovate: image=(?<depName>.*?)\\s?appVersion:\\s?\\\"?(?<currentValue>[\\w+\\.\\-]*)"
+      ],
+      "datasourceTemplate": "docker"
+    }
+  ]
 }
