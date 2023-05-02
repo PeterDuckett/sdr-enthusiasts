@@ -8,7 +8,7 @@ image:
   repository: ghcr.io/sdr-enthusiasts/docker-adsbexchange
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "20230418.1751_nohealthcheck"
+  tag: "20230418.1751"
 
 imagePullSecrets: []
 nameOverride: ""
