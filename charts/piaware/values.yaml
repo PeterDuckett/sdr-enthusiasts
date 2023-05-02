@@ -1,0 +1,93 @@
+# Default values for piaware.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: ghcr.io/sdr-enthusiasts/docker-piaware
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "v8.2_nohealthcheck"
+
+imagePullSecrets: []
+nameOverride: "piaware"
+fullnameOverride: "sdr-enthusiasts-piaware"
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: "piaware"
+
+podAnnotations: {}
+
+podSecurityContext:
+  {}
+  # fsGroup: 2000
+
+securityContext:
+  {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  type: ClusterIP
+  port: 80
+
+#80 - PiAware Status page and dump1090 web interface (Skyaware) - optional but recommended so you can check status and and watch the planes fly around.
+#30003 - dump1090 TCP BaseStation output listen port - optional, recommended to leave unmapped unless explicitly needed
+#30005 - dump1090 TCP Beast output listen port - optional, recommended to leave unmapped unless explicitly needed
+#30105 - If MLAT is enabled, mlat-client results published on this port in Beast format - optional, recommended to leave unmapped unless explicitly needed
+#30978 - If UAT decoding is enabled, UAT raw data published on this port - optional, recommended to leave unmapped unless explicitly needed
+#30979 - If UAT decoding is enabled, UAT decoded JSON published on this port - optional, recommended to leave unmapped unless explicitly needed
+
+ingress:
+  enabled: false
+  className: ""
+  annotations:
+    {}
+    # kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+  hosts:
+    - host: chart-example.local
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+resources:
+  {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

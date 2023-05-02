@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-configmap
+data:
+  SBSHOST: {{ default "readsb" .Values.SBSHOST }}
+  SBSPORT: {{ default "30003" .Values.SBSPORT }}
+---
