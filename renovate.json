@@ -3,7 +3,7 @@
   "extends": [
     "config:base"
   ],
-  "enabledManagers": ["helm-values", "regex"],
+  "enabledManagers": ["helm-values", "helmv3", "regex"],
   "bumpVersion": "minor",
   "regexManagers": [
     {
