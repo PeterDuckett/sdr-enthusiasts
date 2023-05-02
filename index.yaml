@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  flightradar24:
+  - apiVersion: v2
+    appVersion: 1.0.34-0
+    created: "2023-05-02T15:09:31.23721589Z"
+    description: A Helm chart for Kubernetes
+    digest: 1504c096f5b699b90c81bf7b4236b8350fd7a35b817b23c464dfecebed2a02e5
+    name: flightradar24
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/flightradar24-0.1.0/flightradar24-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-05-02T15:09:31.237222291Z"
