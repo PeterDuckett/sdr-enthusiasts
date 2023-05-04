@@ -39,8 +39,13 @@ securityContext:
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
-  port: 30053
+  main:
+    enabled: false
+    ports:
+      http:
+        enabled: false
+        primary: true
+        port: 30053
 
 ingress:
   enabled: false

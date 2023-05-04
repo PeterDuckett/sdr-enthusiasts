@@ -24,3 +24,8 @@ version: "0.1.0"
 appVersion: "v1.0.8-20220708190411"
 
 icon: https://www.adsbexchange.com/wp-content/uploads/cropped-Stealth-48px.png
+
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2

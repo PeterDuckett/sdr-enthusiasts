@@ -24,3 +24,8 @@ version: "0.1.0"
 appVersion: "20230418.1751_nohealthcheck"
 
 icon: https://www.adsbexchange.com/wp-content/uploads/cropped-Stealth-48px.png
+
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
