@@ -8,7 +8,7 @@ image:
   repository: ghcr.io/sdr-enthusiasts/docker-piaware
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v8.2_nohealthcheck"
+  tag: "v8.2"
 
 imagePullSecrets: []
 nameOverride: "piaware"

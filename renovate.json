@@ -6,7 +6,7 @@
   "regexManagers": [
     {
       "description": "Update renovate docker image references",
-      "fileMatch": ["^charts\\/renovate\\/Chart\\.yaml$"],
+      "fileMatch": ["(^|/)Chart\.yaml$"],
       "matchStrings": [
         "appVersion: '(?<currentValue>.*?)'\\s+",
         "version: '(?<currentValue>.*?)'\\s+"
