@@ -8,7 +8,7 @@ image:
   repository: ghcr.io/sdr-enthusiasts/docker-planefinder
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "5.0.161"
+  tag: "5.0.161_nohealthcheck"
 
 imagePullSecrets: []
 nameOverride: "planefinder"
