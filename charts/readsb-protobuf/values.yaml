@@ -56,6 +56,11 @@ service:
         enabled: false
         protocol: TCP
         port: 30005
+      
+      mlatbeastoutput:
+        enabled: false
+        port: 30105
+        protocol: TCP
 
 autoscaling:
   enabled: false
