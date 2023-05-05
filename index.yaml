@@ -2,6 +2,21 @@ apiVersion: v1
 entries:
   adsbexchange:
   - apiVersion: v2
+    appVersion: 20230504.2010_nohealthcheck
+    created: "2023-05-05T10:42:05.983446494Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Helm chart for Kubernetes
+    digest: eb5ad108462b0fc4e7dd384e769f7e14b73ce1997938359fee72d2c680e74370
+    icon: https://www.adsbexchange.com/wp-content/uploads/cropped-Stealth-48px.png
+    name: adsbexchange
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/adsbexchange-1.0.0/adsbexchange-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v2
     appVersion: 20230418.1751_nohealthcheck
     created: "2023-05-03T12:24:04.858063559Z"
     description: A Helm chart for Kubernetes
@@ -15,6 +30,20 @@ entries:
   adsbhub:
   - apiVersion: v2
     appVersion: 1.06_nohealthcheck
+    created: "2023-05-05T10:42:06.134191785Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Helm chart for Kubernetes
+    digest: 4c6d50f67c5ad8f3bb3bf4a590316c5f19e5dc84fa9193576ba7169136f70070
+    name: adsbhub
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/adsbhub-1.06/adsbhub-1.06.tgz
+    version: "1.06"
+  - apiVersion: v2
+    appVersion: 1.06_nohealthcheck
     created: "2023-05-03T12:24:05.01123876Z"
     description: A Helm chart for Kubernetes
     digest: 078bf327fd3e303fc44fbb26745b7b405396867c4615aad5b5013a3be72d9882
@@ -24,6 +53,20 @@ entries:
     - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/adsbhub-0.1.0/adsbhub-0.1.0.tgz
     version: 0.1.0
   flightradar24:
+  - apiVersion: v2
+    appVersion: 1.0.34-0_nohealthcheck
+    created: "2023-05-05T10:42:06.298144215Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Helm chart for Kubernetes
+    digest: a0dab8bd7505d5c88ac9b8a98585e41e57923ecab6cd83a6df70dfa284c04cea
+    name: flightradar24
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/flightradar24-1.0.34-0/flightradar24-1.0.34-0.tgz
+    version: 1.0.34-0
   - apiVersion: v2
     appVersion: 1.0.34-0
     created: "2023-05-02T15:09:31.23721589Z"
@@ -37,6 +80,20 @@ entries:
   opensky-network:
   - apiVersion: v2
     appVersion: 2.1.7-1
+    created: "2023-05-05T10:42:06.453699457Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Helm chart for Kubernetes
+    digest: 9b6cc99c2291e179dc6783208b1766dbbdd8acc836aa9d3d9d5b741d777d175c
+    name: opensky-network
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/opensky-network-2.1.7-1/opensky-network-2.1.7-1.tgz
+    version: 2.1.7-1
+  - apiVersion: v2
+    appVersion: 2.1.7-1
     created: "2023-05-03T12:24:05.291998731Z"
     description: A Helm chart for Kubernetes
     digest: e4fc87d4dc1fb5339fb628b53ab2636954a0e8d44001ec4b7ee2081ed7c4e1bb
@@ -46,6 +103,20 @@ entries:
     - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/opensky-network-0.1.0/opensky-network-0.1.0.tgz
     version: 0.1.0
   piaware:
+  - apiVersion: v2
+    appVersion: v8.2_nohealthcheck
+    created: "2023-05-05T10:42:06.606817173Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Helm chart for Kubernetes
+    digest: 4bcaecaf3695d505c998f06d4ef6e0b6fdfec0e85c30ac1d3f235af627373574
+    name: piaware
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/piaware-8.2/piaware-8.2.tgz
+    version: "8.2"
   - apiVersion: v2
     appVersion: v8.2
     created: "2023-05-03T12:24:05.428674504Z"
@@ -57,6 +128,20 @@ entries:
     - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/piaware-0.1.0/piaware-0.1.0.tgz
     version: 0.1.0
   planefinder:
+  - apiVersion: v2
+    appVersion: 5.0.161_nohealthcheck
+    created: "2023-05-05T10:42:06.75345672Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Helm chart for Kubernetes
+    digest: 40f7db7cab79c71962aa2f7a265d47d4191326362362c346399dc46eb1ed863a
+    name: planefinder
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/planefinder-5.0.161/planefinder-5.0.161.tgz
+    version: 5.0.161
   - apiVersion: v2
     appVersion: 5.0.161
     created: "2023-05-03T12:24:05.566230569Z"
@@ -70,6 +155,21 @@ entries:
   radarbox:
   - apiVersion: v2
     appVersion: v1.0.8-20220708190411
+    created: "2023-05-05T10:42:06.91073898Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Helm chart for Kubernetes
+    digest: 13cffb31bcf15a9e4851ca09a0e4c0848c2b67fd1b7ffd3c2cbe78dab290b040
+    icon: https://www.adsbexchange.com/wp-content/uploads/cropped-Stealth-48px.png
+    name: radarbox
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/radarbox-1.0.8-20220708190411/radarbox-1.0.8-20220708190411.tgz
+    version: 1.0.8-20220708190411
+  - apiVersion: v2
+    appVersion: v1.0.8-20220708190411
     created: "2023-05-03T12:24:05.716909597Z"
     description: A Helm chart for Kubernetes
     digest: 1a2c4bef9b6b8a678eb01f88851872b942393bf74f20e797c6c197c3c72ea065
@@ -81,6 +181,20 @@ entries:
     version: 0.1.0
   readsb-protobuf:
   - apiVersion: v2
+    appVersion: v4.0.3_nohealthcheck
+    created: "2023-05-05T10:42:07.063056688Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Helm chart for Kubernetes
+    digest: c837bdf5a70ce2e03242ac2e7e7db95018399101d2fba96c62197a1ab3fcb83d
+    name: readsb-protobuf
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/readsb-protobuf-4.0.3/readsb-protobuf-4.0.3.tgz
+    version: 4.0.3
+  - apiVersion: v2
     appVersion: v4.0.3
     created: "2023-05-03T12:24:05.935316818Z"
     description: A Helm chart for Kubernetes
@@ -90,4 +204,4 @@ entries:
     urls:
     - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/readsb-protobuf-0.1.0/readsb-protobuf-0.1.0.tgz
     version: 0.1.0
-generated: "2023-05-03T12:24:05.935322618Z"
+generated: "2023-05-05T10:42:07.063091688Z"
