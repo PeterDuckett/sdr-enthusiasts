@@ -68,6 +68,20 @@ entries:
     - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/flightradar24-1.0.34-0/flightradar24-1.0.34-0.tgz
     version: 1.0.34-0
   - apiVersion: v2
+    appVersion: 1.0.34-0_nohealthcheck
+    created: "2023-05-19T19:02:31.972679503Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Helm chart for Kubernetes
+    digest: 288640d2344a64ed2e0a2a425b484cd169bcaad6192b2498cd6c512124af2397
+    name: flightradar24
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/flightradar24-1.0.34-0/flightradar24-1.0.34-0.tgz
+    version: 1.0.34-0
+  - apiVersion: v2
     appVersion: 1.0.34-0
     created: "2023-05-02T15:09:31.23721589Z"
     description: A Helm chart for Kubernetes
@@ -87,6 +101,20 @@ entries:
       version: 4.5.2
     description: A Helm chart for Kubernetes
     digest: 9b6cc99c2291e179dc6783208b1766dbbdd8acc836aa9d3d9d5b741d777d175c
+    name: opensky-network
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/opensky-network-2.1.7-1/opensky-network-2.1.7-1.tgz
+    version: 2.1.7-1
+  - apiVersion: v2
+    appVersion: 2.1.7-1
+    created: "2023-05-19T19:02:32.156218988Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Helm chart for Kubernetes
+    digest: 4461f3cdb814f322b49d913c4bab7909240bff4b5722931fe7d9381f46200c40
     name: opensky-network
     type: application
     urls:
@@ -204,4 +232,4 @@ entries:
     urls:
     - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/readsb-protobuf-0.1.0/readsb-protobuf-0.1.0.tgz
     version: 0.1.0
-generated: "2023-05-05T10:42:07.063091688Z"
+generated: "2023-05-19T19:02:32.700951775Z"
