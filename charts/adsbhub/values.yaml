@@ -8,7 +8,7 @@ image:
   repository: ghcr.io/sdr-enthusiasts/docker-adsbhub
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.06_nohealthcheck"
+  tag: "1.06"
 
 imagePullSecrets: []
 nameOverride: "adsbhub"
