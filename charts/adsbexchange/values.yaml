@@ -11,7 +11,7 @@ image:
   tag: "20230504.2010_nohealthcheck"
 
 imagePullSecrets: []
-nameOverride: ""
+nameOverride: "adsbexchange"
 fullnameOverride: "sdr-enthusiasts-adsbexchange"
 
 serviceAccount:
@@ -27,6 +27,8 @@ service:
   main:
     enabled: false
     ports:
+      http:
+        enabled: false
       beastinput:
         enabled: false
         protocol: TCP
@@ -37,5 +39,3 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
-
-

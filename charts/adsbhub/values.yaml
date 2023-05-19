@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: docker pull ghcr.io/sdr-enthusiasts/docker-adsbhub
+  repository: ghcr.io/sdr-enthusiasts/docker-adsbhub
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "1.06_nohealthcheck"
@@ -22,6 +22,10 @@ serviceAccount:
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
   name: "adsbhub"
+
+service:
+  main:
+    enabled: false
 
 autoscaling:
   enabled: false
