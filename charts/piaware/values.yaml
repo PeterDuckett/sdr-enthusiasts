@@ -41,7 +41,7 @@ service:
         enabled: false
         protocol: TCP
         port: 30005
-      
+
       mlatbeastoutput:
         enabled: false
         protocol: TCP
