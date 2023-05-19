@@ -82,6 +82,20 @@ entries:
     - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/flightradar24-1.0.34-0/flightradar24-1.0.34-0.tgz
     version: 1.0.34-0
   - apiVersion: v2
+    appVersion: 1.0.34-0_nohealthcheck
+    created: "2023-05-19T19:42:26.332659711Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Helm chart for Kubernetes
+    digest: 3593b861d1de283b165c5e974e3193d5224b7ec044172879aaba3e95795a336c
+    name: flightradar24
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/flightradar24-1.0.34-0/flightradar24-1.0.34-0.tgz
+    version: 1.0.34-0
+  - apiVersion: v2
     appVersion: 1.0.34-0
     created: "2023-05-02T15:09:31.23721589Z"
     description: A Helm chart for Kubernetes
@@ -115,6 +129,20 @@ entries:
       version: 4.5.2
     description: A Helm chart for Kubernetes
     digest: 4461f3cdb814f322b49d913c4bab7909240bff4b5722931fe7d9381f46200c40
+    name: opensky-network
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/opensky-network-2.1.7-1/opensky-network-2.1.7-1.tgz
+    version: 2.1.7-1
+  - apiVersion: v2
+    appVersion: 2.1.7-1
+    created: "2023-05-19T19:42:26.45351749Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Helm chart for Kubernetes
+    digest: 00177df7bad05702b6366952de05777c3663f10db56580b02378fb54a6830ff3
     name: opensky-network
     type: application
     urls:
@@ -198,6 +226,21 @@ entries:
     version: 1.0.8-20220708190411
   - apiVersion: v2
     appVersion: v1.0.8-20220708190411
+    created: "2023-05-19T19:42:26.843669818Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Helm chart for Kubernetes
+    digest: 4ce78d93105b925917574b3f328e92cd6898d94544f22684a1717a5fa0e74ff5
+    icon: https://www.adsbexchange.com/wp-content/uploads/cropped-Stealth-48px.png
+    name: radarbox
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/radarbox-1.0.8-20220708190411/radarbox-1.0.8-20220708190411.tgz
+    version: 1.0.8-20220708190411
+  - apiVersion: v2
+    appVersion: v1.0.8-20220708190411
     created: "2023-05-03T12:24:05.716909597Z"
     description: A Helm chart for Kubernetes
     digest: 1a2c4bef9b6b8a678eb01f88851872b942393bf74f20e797c6c197c3c72ea065
@@ -232,4 +275,4 @@ entries:
     urls:
     - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/readsb-protobuf-0.1.0/readsb-protobuf-0.1.0.tgz
     version: 0.1.0
-generated: "2023-05-19T19:02:32.700951775Z"
+generated: "2023-05-19T19:42:26.964703099Z"
