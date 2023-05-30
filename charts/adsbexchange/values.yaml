@@ -27,9 +27,11 @@ service:
   main:
     enabled: false
     ports:
+
       http:
         enabled: false
-      beastinput:
+        
+      mlatbeastoutput:
         enabled: false
         protocol: TCP
         port: 30105
