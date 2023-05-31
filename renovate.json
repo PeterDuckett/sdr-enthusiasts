@@ -18,37 +18,37 @@
   "packageRules": [
     {
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["sdr-enthusiasts/docker-adsbexchange"],
+      "matchPackageNames": ["ghcr.io/sdr-enthusiasts/docker-adsbexchange"],
       "versioning": "regex:^(20\\d{2})(((02)(0[1-9]|[1-2][0-9]))|(((0(1|[3-9]))|(1[0-2]))(0[1-9]|[1-2][0-9]|30))|((01|03|05|07|08|10|12)(31)))\\.\\d+_nohealthcheck$"
     },
     {
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["sdr-enthusiasts/docker-adsbhub"],
+      "matchPackageNames": ["ghcr.io/sdr-enthusiasts/docker-adsbhub"],
       "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)_nohealthcheck$"
     },
     {
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["sdr-enthusiasts/docker-flightradar24"],
-      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\-\\d+_nohealthcheck$"
+      "matchPackageNames": ["ghcr.io/sdr-enthusiasts/docker-flightradar24"],
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\-(?<build>\\d+)_nohealthcheck$"
     },
     {
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["sdr-enthusiasts/docker-opensky-network"],
-      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\-\\d+$"
+      "matchPackageNames": ["ghcr.io/sdr-enthusiasts/docker-opensky-network"],
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\-(?<build>\\d+)$"
     },
     {
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["sdr-enthusiasts/docker-piaware"],
+      "matchPackageNames": ["ghcr.io/sdr-enthusiasts/docker-piaware"],
       "versioning": "regex:^v?(?<major>\\d+)\\.(?<minor>\\d+)_nohealthcheck$"
     },
     {
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["sdr-enthusiasts/docker-radarbox"],
-      "versioning": "regex:^v?(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\-(20\\d{2})(((02)(0[1-9]|[1-2][0-9]))|(((0(1|[3-9]))|(1[0-2]))(0[1-9]|[1-2][0-9]|30))|((01|03|05|07|08|10|12)(31)))\\d+$"
+      "matchPackageNames": ["ghcr.io/sdr-enthusiasts/docker-radarbox"],
+      "versioning": "regex:v?(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\-(?<build>(20\\d{2})(((02)(0[1-9]|[1-2][0-9]))|(((0(1|[3-9]))|(1[0-2]))(0[1-9]|[1-2][0-9]|30))|((01|03|05|07|08|10|12)(31)))\\d+)$"
     },
     {
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["sdr-enthusiasts/docker-readsb-protobuf"],
+      "matchPackageNames": ["ghcr.io/sdr-enthusiasts/docker-readsb-protobuf"],
       "versioning": "regex:^v?(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)_nohealthcheck$"
     }
   ]
