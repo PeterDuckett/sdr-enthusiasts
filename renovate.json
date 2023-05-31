@@ -5,14 +5,12 @@
   ],
   "regexManagers": [
     {
-      "description": "Update renovate docker image references",
+      "datasourceTemplate": "docker",
       "fileMatch": ["(^|/)Chart\\.yaml$"],
       "matchStrings": [
-        "appVersion: '(?<currentValue>.*?)'\\s+",
-        "version: '(?<currentValue>.*?)'\\s+"
-      ],
-      "depNameTemplate": "renovate/renovate",
-      "datasourceTemplate": "docker"
+        "#\\s?renovate: image=(?<depName>.*?)\\s?version:\\s?\\\"?(?<currentValue>[\\w+\\.\\-]*)\"",
+        "#\\s?renovate: image=(?<depName>.*?)\\s?appVersion:\\s?\\\"?(?<currentValue>[\\w+\\.\\-]*)\""
+      ]
     }
   ],
   "packageRules": [
