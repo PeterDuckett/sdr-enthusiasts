@@ -2,6 +2,21 @@ apiVersion: v1
 entries:
   adsbexchange:
   - apiVersion: v2
+    appVersion: 20230730.1215_nohealthcheck
+    created: "2023-07-31T10:01:37.940016556Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Helm chart for Kubernetes
+    digest: acac6e64d6956bf50db2f69c88919d5670fc7b6c64d52554844ec9672d5a9414
+    icon: https://www.adsbexchange.com/wp-content/uploads/cropped-Stealth-48px.png
+    name: adsbexchange
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/adsbexchange-20230730.1215/adsbexchange-20230730.1215.tgz
+    version: "20230730.1215"
+  - apiVersion: v2
     appVersion: 20230707.0626_nohealthcheck
     created: "2023-07-11T13:39:44.309510435Z"
     dependencies:
@@ -405,4 +420,4 @@ entries:
     urls:
     - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/readsb-protobuf-0.1.0/readsb-protobuf-0.1.0.tgz
     version: 0.1.0
-generated: "2023-07-11T13:39:44.309576236Z"
+generated: "2023-07-31T10:01:37.940079756Z"
