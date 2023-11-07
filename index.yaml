@@ -159,6 +159,20 @@ entries:
     version: 0.1.0
   flightradar24:
   - apiVersion: v2
+    appVersion: 1.0.44-0_nohealthcheck
+    created: "2023-11-07T11:54:16.328737515Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Helm chart for Kubernetes
+    digest: e5501883007d480e5298a51b791b5697d012ba24f5aeb1679db66dea4011fd57
+    name: flightradar24
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/flightradar24-1.0.44-0/flightradar24-1.0.44-0.tgz
+    version: 1.0.44-0
+  - apiVersion: v2
     appVersion: 1.0.37-0_nohealthcheck
     created: "2023-07-04T11:24:48.535654081Z"
     dependencies:
@@ -494,4 +508,4 @@ entries:
     urls:
     - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/readsb-protobuf-0.1.0/readsb-protobuf-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-07T11:53:25.767165004Z"
+generated: "2023-11-07T11:54:16.328842814Z"
