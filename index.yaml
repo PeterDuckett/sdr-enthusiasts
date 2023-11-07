@@ -335,6 +335,20 @@ entries:
     version: 0.1.0
   piaware:
   - apiVersion: v2
+    appVersion: v9.0_nohealthcheck
+    created: "2023-11-07T11:53:25.767074556Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Helm chart for Kubernetes
+    digest: 63fc976c4ab6e99fa146a2d9d6a6f0b7e75bd37e93bea4be40de1fe46fc1a7ed
+    name: piaware
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/piaware-v9.0/piaware-v9.0.tgz
+    version: v9.0
+  - apiVersion: v2
     appVersion: v8.2_nohealthcheck
     created: "2023-05-05T10:42:06.606817173Z"
     dependencies:
@@ -480,4 +494,4 @@ entries:
     urls:
     - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/readsb-protobuf-0.1.0/readsb-protobuf-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-30T13:18:19.259995521Z"
+generated: "2023-11-07T11:53:25.767165004Z"
