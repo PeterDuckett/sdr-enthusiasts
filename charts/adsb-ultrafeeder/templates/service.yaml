@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "adsb-ultrafeeder.fullname" . }}
+  labels:
+    {{- include "adsb-ultrafeeder.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "adsb-ultrafeeder.selectorLabels" . | nindent 4 }}
