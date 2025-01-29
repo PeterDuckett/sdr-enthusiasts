@@ -1,0 +1,138 @@
+apiVersion: v1
+entries:
+  adsb-ultrafeeder:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-01-29T12:43:21.27406315Z"
+    dependencies:
+    - name: common
+      repository: oci://tccr.io/truecharts
+      version: 25.4.11
+    description: A Helm chart for Kubernetes
+    digest: 70909a6b402a043798d8dbfb396c08e21dbbc2152ddb87533c4475917b958a96
+    name: adsb-ultrafeeder
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/adsb-ultrafeeder-0.1.0/adsb-ultrafeeder-0.1.0.tgz
+    version: 0.1.0
+  adsbexchange:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-01-29T12:43:21.381086204Z"
+    dependencies:
+    - name: common
+      repository: oci://tccr.io/truecharts
+      version: 25.4.11
+    description: A Helm chart for Kubernetes
+    digest: 541b0dbae2717a6ff2702906b5f70450bfced417ddaa1f96e4ebba404aadcced
+    name: adsbexchange
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/adsbexchange-0.1.0/adsbexchange-0.1.0.tgz
+    version: 0.1.0
+  adsbhub:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-01-29T12:43:21.489165793Z"
+    dependencies:
+    - name: common
+      repository: oci://tccr.io/truecharts
+      version: 25.4.11
+    description: A Helm chart for Kubernetes
+    digest: 1c5f2c6d21bbcacb0950d8ba4d1c5f83abba94cf3de602876fa2f5abd74e2192
+    name: adsbhub
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/adsbhub-0.1.0/adsbhub-0.1.0.tgz
+    version: 0.1.0
+  airnavradar:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-01-29T12:43:21.640038681Z"
+    dependencies:
+    - name: common
+      repository: oci://tccr.io/truecharts
+      version: 25.4.11
+    description: A Helm chart for Kubernetes
+    digest: e46470e9a87fe02a2e4e5226731d94f7f93e83dee467f1a3b433c3d07e8b165c
+    name: airnavradar
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/airnavradar-0.1.0/airnavradar-0.1.0.tgz
+    version: 0.1.0
+  flightradar24:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-01-29T12:43:21.72984181Z"
+    dependencies:
+    - name: common
+      repository: oci://tccr.io/truecharts
+      version: 25.4.11
+    description: A Helm chart for Kubernetes
+    digest: 5b348d0ebc89a732f4208ebfb6e47b07c64b054125679dec158e1705d0ec72d5
+    name: flightradar24
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/flightradar24-0.1.0/flightradar24-0.1.0.tgz
+    version: 0.1.0
+  opensky-network:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-01-29T12:43:21.87577791Z"
+    dependencies:
+    - name: common
+      repository: oci://tccr.io/truecharts
+      version: 25.4.11
+    description: A Helm chart for Kubernetes
+    digest: 0f15e705bc091ee05d9d56f58e9d7ef1085819dcbf432c7834f92ac597e11d27
+    name: opensky-network
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/opensky-network-0.1.0/opensky-network-0.1.0.tgz
+    version: 0.1.0
+  piaware:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-01-29T12:43:21.995780755Z"
+    dependencies:
+    - name: common
+      repository: oci://tccr.io/truecharts
+      version: 25.4.11
+    description: A Helm chart for Kubernetes
+    digest: 892beb292909e79a898e5f822e90a52963cfa0274a6e5dc36e8a0b80745261da
+    name: piaware
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/piaware-0.1.0/piaware-0.1.0.tgz
+    version: 0.1.0
+  plane-alert-db:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-01-29T12:43:22.107985243Z"
+    dependencies:
+    - name: common
+      repository: oci://tccr.io/truecharts
+      version: 25.4.11
+    description: A Helm chart for Kubernetes
+    digest: 16177aa2948118c128bd49e22f953d7f15d01933207cedebb2b65ff0cd85dd8a
+    name: plane-alert-db
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/plane-alert-db-0.1.0/plane-alert-db-0.1.0.tgz
+    version: 0.1.0
+  planefinder:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-01-29T12:43:22.222306924Z"
+    dependencies:
+    - name: common
+      repository: oci://tccr.io/truecharts
+      version: 25.4.11
+    description: A Helm chart for Kubernetes
+    digest: 38334ee0034f886529cab1c6c876f0d00bc2ac8fc93a52d81b59707f96278af8
+    name: planefinder
+    type: application
+    urls:
+    - https://github.com/PeterDuckett/sdr-enthusiasts/releases/download/planefinder-0.1.0/planefinder-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-01-29T12:43:22.222335127Z"
