@@ -8,11 +8,11 @@ image:
   repository: ghcr.io/sdr-enthusiasts/docker-piaware
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v9.0.1"
+  tag: "v9.0.1_nohealthcheck"
 
 imagePullSecrets: []
-nameOverride: ""
-fullnameOverride: ""
+nameOverride: "piaware"
+fullnameOverride: "sdr-enthusiasts-piaware"
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -23,7 +23,7 @@ serviceAccount:
   annotations: {}
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
-  name: ""
+  name: "piaware"
 
 podAnnotations: {}
 podLabels: {}
@@ -40,8 +40,28 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
-  port: 80
+  main:
+    enabled: false
+    ports:
+      http:
+        enabled: false
+        primary: true
+        port: 80
+
+      basestation:
+        enabled: false
+        protocol: TCP
+        port: 30003
+
+      beastoutput:
+        enabled: false
+        protocol: TCP
+        port: 30005
+
+      mlatbeastoutput:
+        enabled: false
+        protocol: TCP
+        port: 30105
 
 ingress:
   enabled: false

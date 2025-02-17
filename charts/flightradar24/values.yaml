@@ -11,8 +11,8 @@ image:
   tag: "1.0.48-0"
 
 imagePullSecrets: []
-nameOverride: ""
-fullnameOverride: ""
+nameOverride: "flightradar24"
+fullnameOverride: "sdr-enthusiasts-flightradar24"
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -40,8 +40,24 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
-  port: 80
+
+  main:
+    enabled: false
+    ports:
+      http:
+        enabled: false
+        primary: true
+        port: 8754, 8755
+
+      raw-output:
+        enabled: false
+        protocol: TCP
+        port: 30334
+
+      sbs-output:
+        enabled: false
+        protocol: TCP
+        port: 30003
 
 ingress:
   enabled: false

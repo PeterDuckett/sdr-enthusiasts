@@ -11,8 +11,8 @@ image:
   tag: "latest-build-625"
 
 imagePullSecrets: []
-nameOverride: ""
-fullnameOverride: ""
+nameOverride: "adsb-ultrafeeder"
+fullnameOverride: "sdr-enthusiasts-adsb-ultrafeeder"
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -40,8 +40,84 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
-  port: 80
+  main:
+    enabled: false
+    ports:
+      http:
+        enabled: false
+        primary: true
+        port: 80
+
+      raw-input:
+        enabled: false
+        protocol: TCP
+        port: 30001
+
+      raw-output:
+        enabled: false
+        protocol: TCP
+        port: 30002
+
+      sbs-input:
+        enabled: false
+        protocol: TCP
+        port: 30006
+
+      sbs-output:
+        enabled: false
+        protocol: TCP
+        port: 30003
+
+      beast-input:
+        enabled: false
+        protocol: TCP
+        port: 30004 30104
+
+      beast-output:
+        enabled: false
+        protocol: TCP
+        port: 30005
+
+      beast-output-reduced:
+        enabled: false
+        protocol: TCP
+        port: 30006
+
+      json-output:
+        enabled: false
+        protocol: TCP
+        port: 30047
+
+      mlat-sbs-output:
+        enabled: false
+        protocol: TCP
+        port: 31003
+
+      mlat-beast-input:
+        enabled: false
+        protocol: TCP
+        port: 31004
+
+      mlat-beast-output:
+        enabled: false
+        protocol: TCP
+        port: 31005
+
+      mlat-beast-output-reduced:
+        enabled: false
+        protocol: TCP
+        port: 31003
+
+      prometheus-telegraf:
+        enabled: false
+        protocol: TCP
+        port: 9273
+
+      prometheus-readsb:
+        enabled: false
+        protocol: TCP
+        port: 9274
+
 
 ingress:
   enabled: false
@@ -87,18 +163,14 @@ autoscaling:
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
 
-# Additional volumes on the output Deployment definition.
-volumes: []
-# - name: foo
-#   secret:
-#     secretName: mysecret
-#     optional: false
+persistence:
+  varrun:
+    enabled: false
+    mountPath: /run
+    type: emptyDir
+    medium: Memory
+    size: 256M
 
-# Additional volumeMounts on the output Deployment definition.
-volumeMounts: []
-# - name: foo
-#   mountPath: "/etc/foo"
-#   readOnly: true
 
 nodeSelector: {}
 
